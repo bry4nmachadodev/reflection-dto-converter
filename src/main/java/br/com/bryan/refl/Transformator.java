@@ -12,7 +12,7 @@ public class Transformator {
 
             O targetClass = (O) target.getDeclaredConstructor().newInstance();
 
-            Field[] sourceFields =source.getDeclaredFields();
+            Field[] sourceFields = source.getDeclaredFields();
             Field[] targetFields = target.getDeclaredFields();
 
             return targetClass;
