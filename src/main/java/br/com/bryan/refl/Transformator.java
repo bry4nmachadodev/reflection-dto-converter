@@ -25,8 +25,9 @@ public class Transformator {
 
         private void validate(Field sourceField, Field targetField){
             if(sourceField.getName().equals(targetField.getName())
-                    && sourceField.getType().equals(targetField.getType())){
-
+                    && sourceField.getType().equals(targetField.getType())) {
+                sourceField.setAccessible(true);
+                targetField.setAccessible(true);
             }
 
         }
