@@ -1,60 +1,41 @@
-REFLECTION-DTO-CONVERTER
-Transform Data Instantly, Empower Seamless Innovation
+# REFLECTION-DTO-CONVERTER
+> **Transforme dados instantaneamente, potencialize a inovação contínua 🚀**
 
-last-commit repo-top-language repo-language-count
-Built with the tools and technologies:
+![Último Commit](https://img.shields.io/github/last-commit/bry4nmachadodev/reflection-dto-converter?style=flat-square)
+![Linguagem Principal](https://img.shields.io/github/languages/top/bry4nmachadodev/reflection-dto-converter?style=flat-square)
+![Contagem de Linguagens](https://img.shields.io/github/languages/count/bry4nmachadodev/reflection-dto-converter?style=flat-square)
 
-XML
+## 📖 Índice
+- [Visão Geral](#visão-geral)
+- [Por que reflection-dto-converter?](#por-que-reflection-dto-converter)
+- [Primeiros Passos](#primeiros-passos)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Instalação](#instalação)
+  - [Uso](#uso)
+- [Testes](#testes)
 
-Table of Contents
-Overview
-Getting Started
-Prerequisites
-Installation
-Usage
-Testing
-Overview
-reflection-dto-converter is a Java-based tool designed to facilitate dynamic transformation of data transfer objects (DTOs) through reflection. It enables seamless data mapping between domain models and DTOs, reducing boilerplate code and improving maintainability.
+## 📝 Visão Geral
+**reflection-dto-converter** é uma ferramenta desenvolvida em **Java** que facilita a transformação dinâmica de **DTOs** por meio de **reflection**.  
+Ela possibilita o mapeamento automático de dados entre modelos de domínio e DTOs, reduzindo código repetitivo e melhorando a manutenibilidade do sistema.
 
-Why reflection-dto-converter?
+## ❓ Por que reflection-dto-converter?
+Este projeto simplifica o processo de conversão de objetos complexos em seus respectivos DTOs, ajudando a manter uma **arquitetura limpa** e eficiente no fluxo de dados.  
 
-This project simplifies the process of converting complex objects into their DTO counterparts, supporting clean architecture and efficient data handling. The core features include:
+✨ **Principais recursos:**
+- 🧩 **Conversão via Reflection** → Faz o mapeamento dinâmico de campos com reflection, permitindo transformações flexíveis e reutilizáveis.  
+- 🚀 **Troca de Dados Fluida** → Facilita a transferência de dados entre camadas da aplicação, promovendo separação de responsabilidades.  
+- 🔍 **Validação Robusta** → Inclui testes abrangentes para garantir precisão e cobrir casos de borda.  
+- 🛠️ **Compatível com Java 17** → Desenvolvido para ambientes modernos, preparado para o futuro.  
+- 📦 **Arquitetura Modular** → Estrutura clara (entidades, DTOs, repositórios e lógica de transformação), de fácil extensão e integração.  
 
-🧩 Reflection-powered Conversion: Leverages reflection to map matching fields dynamically, enabling flexible and reusable data transformations.
-🚀 Seamless Data Exchange: Facilitates smooth data transfer between application layers, promoting separation of concerns.
-🔍 Robust Validation: Includes comprehensive tests to ensure transformation accuracy and handle edge cases.
-🛠️ Java 17 Compatibility: Built to work with modern Java environments, ensuring future-proof development.
-📦 Modular Architecture: Well-structured classes like entities, DTOs, repositories, and transformation logic support easy extension and integration.
-Getting Started
-Prerequisites
-This project requires the following dependencies:
+## ⚡ Primeiros Passos
 
-Programming Language: Java
-Package Manager: Maven
-Installation
-Build reflection-dto-converter from the source and install dependencies:
+### ✅ Pré-requisitos
+Este projeto requer:
+- **Java 17+**
+- **Maven**
 
-Clone the repository:
-
-❯ git clone https://github.com/bry4nmachadodev/reflection-dto-converter
-Navigate to the project directory:
-
-❯ cd reflection-dto-converter
-Install the dependencies:
-
-Using maven:
-
-❯ mvn install
-Usage
-Run the project with:
-
-Using maven:
-
-mvn exec:java
-Testing
-Reflection-dto-converter uses the {test_framework} test framework. Run the test suite with:
-
-Using maven:
-
-mvn test
-⬆ Return
+### 📥 Instalação
+Clone o repositório:
+```bash
+git clone https://github.com/bry4nmachadodev/reflection-dto-converter
