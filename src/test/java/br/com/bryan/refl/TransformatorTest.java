@@ -14,6 +14,7 @@ public class TransformatorTest {
     Pessoa pessoa = new Pessoa(1, "João", "1234");
     Endereco endereco = new Endereco(7, "Rua 10");
 
+
     @Test
     @DisplayName("DEVE transformar e verificar")
     public void shouldTranform() throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
@@ -32,5 +33,16 @@ public class TransformatorTest {
             Transformator transformator = new Transformator();
             transformator.transform(endereco);
         });
+    }
+
+    @Test
+    @DisplayName("Deve transformar quando algum campo for NULO")
+    public void shouldTransformWhenSomeFieldIsNull() throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+        Pessoa pessoaSemCPF = new Pessoa("João");
+        Transformator transformator = new Transformator();
+        PessoaDTO pessoaDTOSemCPF = transformator.transform(pessoaSemCPF);
+
+        Assertions.assertEquals(pessoa.getNome(), pessoaDTOSemCPF.getNome());
+        Assertions.assertNull(pessoaDTOSemCPF.getCpf());
     }
 }
