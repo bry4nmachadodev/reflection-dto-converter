@@ -13,7 +13,7 @@ public class TransformatorTest {
     Pessoa pessoa = new Pessoa(1, "João", "1234");
 
     @Test
-    @DisplayName("Deve transformar e verificar")
+    @DisplayName("DEVE transformar e verificar")
     public void shouldTranform() throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
         Transformator transformator = new Transformator();
         PessoaDTO pessoaDTO = transformator.transform(pessoa);
