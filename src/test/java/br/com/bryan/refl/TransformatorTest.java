@@ -1,5 +1,6 @@
 package br.com.bryan.refl;
 
+import br.com.bryan.Endereco;
 import br.com.bryan.Pessoa;
 import br.com.bryan.PessoaDTO;
 import org.junit.jupiter.api.Assertions;
@@ -11,6 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 public class TransformatorTest {
 
     Pessoa pessoa = new Pessoa(1, "João", "1234");
+    Endereco endereco = new Endereco(7, "Rua 10");
 
     @Test
     @DisplayName("DEVE transformar e verificar")
@@ -21,5 +23,14 @@ public class TransformatorTest {
         Assertions.assertInstanceOf(PessoaDTO.class, pessoaDTO);
         Assertions.assertEquals(pessoa.getNome(), pessoaDTO.getNome());
         Assertions.assertEquals(pessoa.getCpf(), pessoaDTO.getCpf());
+    }
+
+    @Test
+    @DisplayName("NÃO deve transformar ( LANÇA CLASS NOT FOUND EXCEPTION )")
+    public void shouldNotTransform()    {
+        Assertions.assertThrows(ClassNotFoundException.class, () -> {
+            Transformator transformator = new Transformator();
+            transformator.transform(endereco);
+        });
     }
 }
